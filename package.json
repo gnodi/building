@@ -1,0 +1,39 @@
+{
+  "name": "@gnodi/building",
+  "description": "Need an helper to handle transpilation, minification and other fastidious building tasks?",
+  "version": "0.0.0",
+  "author": "Thomas Prelot <tprelot@gmail.com> (https://github.com/Gnucki)",
+  "contributors": [],
+  "keywords": [
+    "gnodi",
+    "lib",
+    "building"
+  ],
+  "dependencies": {
+    "babel-core": "^6.18.2",
+    "babel-loader": "^6.2.8",
+    "babel-preset-babili": "0.0.3",
+    "babel-preset-es2015": "^6.18.0",
+    "webpack": "^2.1.0-beta.1"
+  },
+  "devDependencies": {
+    "@gnodi/eslint-config": "^0.1.0",
+    "istanbul": "^0.4.0",
+    "jasmine": "^2.5.2"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gnodi/building"
+  },
+  "main": "index",
+  "scripts": {
+    "lint": "gnodi-lint",
+    "test": "NODE_ENV='test' istanbul cover jasmine test/**/*.js"
+  },
+  "bin": {},
+  "engines": {
+    "node": ">=6",
+    "npm": ">=3"
+  }
+}
